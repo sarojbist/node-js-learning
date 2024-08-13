@@ -14,8 +14,7 @@ const myServer = http.createServer((req, res) => {
     fs.appendFile(".log.txt", log, (err, data) => {
         res.end("Added data into files");
     })
-
-
+    
     // getting ip address of user
     const ip = req.socket.remoteAddress;
     console.log(ip)
