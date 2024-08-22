@@ -1,4 +1,12 @@
-1724310298339: GET /: request Received 
-1724310298431: GET /favicon.ico: request Received 
-1724310333129: GET /pragati: request Received 
-1724310333573: GET /favicon.ico: request Received 
+1724313003143: GET /: request Received 
+1724313041970: GET /about?name=pragati: request Received 
+1724313353421: GET /about?name=pragati: request Received 
+1724313714233: GET /about?name=pragati: request Received 
+1724313721931: GET /: request Received 
+1724313850688: GET /: request Received 
+1724313860206: GET /about?name=pragati: request Received 
+1724314002523: GET /about?name=pragati: request Received 
+1724314139146: GET /about?name=pragati: request Received 
+1724334023320: GET /: request Received 
+1724334028335: GET /about?name=pragati: request Received 
+1724334045842: GET /about: request Received 

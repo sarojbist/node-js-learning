@@ -7,6 +7,5 @@ const myServer = http.createServer((req, res) => {
     fs.appendFile(".log.txt", logg, () => {
         res.end("Added data into files");
     })
-
 })
 myServer.listen(8000, () => console.log("Hey"));
