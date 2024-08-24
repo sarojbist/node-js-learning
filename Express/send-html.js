@@ -1,7 +1,10 @@
 const express = require("express");
 const path = require("path");
+const bodyParser = require("body-parser")
 const port = 80;
 const app = express();
+
+app.use(bodyParser.urlencoded({extended: false}));
 
 // as our form is get method by default, we'll see all data in url.
 // but when we make it post method, as soon as we submit the form, our app.post will run.
@@ -12,9 +15,15 @@ app.get("/", (req, res) => {
 });
 
 app.post("/api/v1/login", (req, res) => {
-    res.end("I'm post");
+    // res.send("I'm post");
     // Can we get the data of form here? Ans: yes but we need to use middleware to parse the data. without middlewares, we'll get undefined.
-    console.log(req.body);
+    const{name, email, password} = req.body;
+    console.log(name);
+res.send(`Hello Mr ${name}`)
+})
+
+app.get("/api/v1/login", (req, res) => {
+    res.send("Hi I'm get")
 })
 
 app.listen(port, () => console.log("Server Running"));
